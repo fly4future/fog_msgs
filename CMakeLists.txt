@@ -21,6 +21,7 @@ set(msg_files
   msg/NavigationDiagnostics.msg
   msg/Vector4Stamped.msg
   msg/FutureTrajectory.msg
+  msg/GlobalPositionRightOfWay.msg
 )
 
 set(srv_files
