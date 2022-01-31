@@ -19,6 +19,8 @@ set(msg_files
   msg/ControlInterfaceVehicleState.msg
   msg/ControlInterfaceMissionState.msg
   msg/ControlInterfaceDiagnostics.msg
+  msg/OdometryVehicleState.msg
+  msg/OdometryDiagnostics.msg
   msg/NavigationDiagnostics.msg
   msg/ObstacleSectors.msg
   msg/Vector4Stamped.msg
