@@ -20,6 +20,7 @@ set(msg_files
   msg/ControlInterfaceMissionState.msg
   msg/ControlInterfaceDiagnostics.msg
   msg/OdometryVehicleState.msg
+  msg/OdometryEstimatorState.msg
   msg/OdometryDiagnostics.msg
   msg/NavigationDiagnostics.msg
   msg/ObstacleSectors.msg
