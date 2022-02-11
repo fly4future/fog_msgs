@@ -22,6 +22,7 @@ set(msg_files
   msg/OdometryVehicleState.msg
   msg/OdometryEstimatorState.msg
   msg/OdometryDiagnostics.msg
+  msg/OdometryType.msg
   msg/NavigationDiagnostics.msg
   msg/ObstacleSectors.msg
   msg/Vector4Stamped.msg
