@@ -19,9 +19,10 @@ set(msg_files
   msg/ControlInterfaceVehicleState.msg
   msg/ControlInterfaceMissionState.msg
   msg/ControlInterfaceDiagnostics.msg
-  msg/OdometryVehicleState.msg
-  msg/OdometryEstimatorState.msg
+  msg/OdometryState.msg
+  msg/EstimatorState.msg
   msg/OdometryDiagnostics.msg
+  msg/EstimatorDiagnostics.msg
   msg/OdometryType.msg
   msg/NavigationDiagnostics.msg
   msg/ObstacleSectors.msg
@@ -38,6 +39,7 @@ set(srv_files
   srv/GetPx4ParamFloat.srv
   srv/WaypointToLocal.srv
   srv/PathToLocal.srv
+  srv/ChangeOdometrySource.srv
 )
 
 rosidl_generate_interfaces(${PROJECT_NAME}
