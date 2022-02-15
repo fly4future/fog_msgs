@@ -1,6 +1,6 @@
 std_msgs/Header header
 fog_msgs/OdometryState odometry_state
 fog_msgs/OdometryState switching_state
-bool getting_pixhawk_odom
+bool getting_pixhawk_odometry
 bool getting_control_interface
 
