@@ -23,6 +23,7 @@ set(msg_files
   msg/navigation/NavigationDiagnostics.msg
   msg/navigation/Vector4Stamped.msg
   msg/navigation/FutureTrajectory.msg
+  msg/navigation/FuturePath.msg
   msg/odometry/Heading.msg
 )
 
