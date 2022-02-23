@@ -22,3 +22,4 @@ string current_waypoint_status
 
 float64[3] last_nav_goal
 bool bumper_active
+string[] active_uavs

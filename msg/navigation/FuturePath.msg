@@ -1,4 +1,2 @@
 std_msgs/Header header
-uint8 priority
-string uav_name
 fog_msgs/Vector4Stamped[] poses
