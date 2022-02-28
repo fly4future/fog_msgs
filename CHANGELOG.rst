@@ -2,6 +2,18 @@
 Changelog for package fog_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+0.1.0 (2022-01-31)
+-----------
+* renamed yaw to heading for consistency
+* added mission state STARTING
+* renamed id to mission_id for consistency and clarity
+* add ID to path and control diagnostics
+* minor message refactoring to make it a bit more cohesive
+* fixed typo
+* changed control interface diags msg
+* added current mission waypoint to the message
+* Contributors: matous, stibipet
+
 0.0.8 (2021-11-30)
 -----------
 * update package versions
