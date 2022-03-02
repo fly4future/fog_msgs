@@ -2,4 +2,3 @@ fog_msgs/OdometryType odometry_type
 ---
 bool success
 string message
-fog_msgs/OdometryType odometry_type
