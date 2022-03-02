@@ -7,4 +7,5 @@ uint8 INIT = 3
 uint8 GPS = 4
 uint8 HECTOR = 5
 uint8 MISSING_ODOMETRY = 6
-uint8 LANDED = 7
+uint8 WAITING_ODOMETRY = 7
+uint8 MANUAL = 8
