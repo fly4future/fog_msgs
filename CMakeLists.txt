@@ -19,7 +19,11 @@ set(msg_files
   msg/control_interface/ControlInterfaceVehicleState.msg
   msg/control_interface/ControlInterfaceMissionState.msg
   msg/control_interface/ControlInterfaceDiagnostics.msg
+  msg/control_interface/MissionItem.msg
+  msg/control_interface/MissionPlan.msg
   msg/fog_bumper/ObstacleSectors.msg
+  msg/navigation/NavigationState.msg
+  msg/navigation/NavigationWaypointState.msg
   msg/navigation/NavigationDiagnostics.msg
   msg/navigation/Vector4Stamped.msg
   msg/navigation/FutureTrajectory.msg
@@ -29,6 +33,7 @@ set(msg_files
   msg/odometry/OdometryType.msg
   msg/odometry/OdometryState.msg
   msg/odometry/Heading.msg
+  msg/MissionProgress.msg
 )
 
 set(srv_files
@@ -43,9 +48,15 @@ set(srv_files
   srv/control_interface/PathToLocal.srv
 )
 
+set(action_files
+  action/ControlInterfaceAction.action
+  action/NavigationAction.action
+)
+
 rosidl_generate_interfaces(${PROJECT_NAME}
     ${msg_files}
     ${srv_files}
+    ${action_files}
     DEPENDENCIES builtin_interfaces geometry_msgs std_msgs sensor_msgs nav_msgs std_srvs
   )
 

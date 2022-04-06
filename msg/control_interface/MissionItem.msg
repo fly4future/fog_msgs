@@ -1,0 +1,12 @@
+float64 latitude_deg
+float64 longitude_deg
+float32 relative_altitude_m
+float32 speed_m_s
+bool is_fly_through
+float32 gimbal_pitch_deg
+float32 gimbal_yaw_deg
+float32 loiter_time_s
+float64 camera_photo_interval_s
+float32 acceptance_radius_m
+float32 yaw_deg
+int64 camera_action

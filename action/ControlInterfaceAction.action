@@ -1,0 +1,10 @@
+# Request message
+nav_msgs/Path path      # path in local coordinates
+uint32 mission_id       # zero is reserved for missions started other way than through this service
+---
+# Result message
+string message
+---
+# Feedback message
+fog_msgs/ControlInterfaceMissionState mission_state
+fog_msgs/MissionProgress mission_progress

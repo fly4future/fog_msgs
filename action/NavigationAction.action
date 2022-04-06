@@ -1,0 +1,9 @@
+# Request message
+nav_msgs/Path path
+bool is_local # if false, the path will first be transformed from GPS coordinates to local coordinates before executing
+---
+# Result message
+string message
+---
+# Feedback message
+fog_msgs/MissionProgress mission_progress

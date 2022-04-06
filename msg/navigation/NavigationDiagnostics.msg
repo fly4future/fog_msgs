@@ -1,24 +1,16 @@
 std_msgs/Header header
 
-## The following navigation states are valid:
-# NOT_READY  - Some important data is missing or the vehicle is not flying autonomously. Cannot receive waypoints.
-# IDLE       - The vehicle is idle and no waypoints are buffered.
-# PLANNING   - The node is planning a path to the next waypoint.
-# COMMANDING - The planned path is being sent to the control interface node.
-# MOVING     - The vehicle is moving along the planned path.
-# AVOIDING   - Reactive avoidance of a nearby obstacle is active (bumper mode).
-string state
+# State of the navigation node
+fog_msgs/NavigationState state
 
-uint8 waypoints_in_buffer
-uint8 current_waypoint_id
-float64[3] current_nav_goal
+# State of the current active waypoint
+fog_msgs/NavigationWaypointState waypoint_state
+# The current active waypoint that Navigation is navigating to
+geometry_msgs/Point waypoint
+# progress of the current mission (current waypoint index out of the total n. of waypoints)
+fog_msgs/MissionProgress mission_progress
 
-## The following waypoint states are valid:
-# EMPTY       - No waypoints are buffered for planning.
-# ONGOING     - The vehicle is moving to the next waypoint.
-# REACHED     - The current waypoint is reached.
-# UNREACHABLE - The current waypoint is unreachable.
-string current_waypoint_status
-
-float64[3] last_nav_goal
+# true if bumper is enabled and there is fresh data available
 bool bumper_active
+# true if any obstacle is closer than the avoidance distance
+bool obstacle_detected
