@@ -26,6 +26,8 @@ set(msg_files
   msg/FutureTrajectory.msg
   msg/MetaMission.msg
   msg/Mission.msg
+  msg/ObjectLost.msg
+  msg/ObjectDetected.msg
   msg/AtomicMission.msg
   msg/MissionStatus.msg
   msg/MissionSyncPermission.msg
